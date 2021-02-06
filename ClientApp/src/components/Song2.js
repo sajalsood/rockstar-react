@@ -14,7 +14,10 @@ export class Song2 extends Component {
 
   static renderSong(song) {
     return (
-      <p>{song.name}</p>
+      <div>
+        <h1 id="tabelLabel">{song.name}</h1>
+        <div dangerouslySetInnerHTML={{__html: song.lyrics}} />
+      </div>
     );
   }
 
@@ -25,17 +28,14 @@ export class Song2 extends Component {
 
     return (
       <div>
-        <h1 id="tabelLabel">Song</h1>
         {contents}
       </div>
     );
   }
 
   async populateSongData() {
-    const response = await fetch('song');
-    console.log(response);
+    const response = await fetch('song?id=' + 2);
     const data = await response.json();
-    console.log(data);
     this.setState({ song: data, loading: false });
   }
 }
