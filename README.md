@@ -63,3 +63,27 @@ appsettings.Development.json
 appsettings.json
 rockstar.csproj
 ```
+
+## Serving the data
+
+The react application communicates with the dotnet server through an API Controller. The controller `SongController.cs` has two APIs:
+1. HttpGet - `Song By Id`
+2. HttpGet - `All Songs`
+
+Both actions in the controller return a model data - `SongModel.cs`. 
+
+```c#
+public class SongModel
+{
+    public int Id { get; set; }
+    public string Name { get; set; }
+    public string Artist { get; set; }
+    public string ImageUrl { get; set; }
+    public string Lyrics { get; set; }
+}
+```
+
+The lyrics are stored as Json Data which is served to react frontend and converted to HTML layout during the page rendering.
+
+The name of the image is also served from the backend and an absolute path is contructed on nreact frontend. The absolute path corresponds to the static image which is located in the `public\images\****` folder.
+
