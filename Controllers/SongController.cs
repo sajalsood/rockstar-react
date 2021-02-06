@@ -27,7 +27,7 @@ namespace rockstar.Controllers
                 Id = 2,
                 Name = "The Show Must Go On",
                 Artist = "Queen",
-                ImageUrl = "queen.jpg",
+                ImageUrl = "queen-1.jpg",
                 Lyrics = @"<div>Empty spaces.<br>What are we living for?<br>Abandoned places.<br>I guess we know the score.<br><br>On and on.<br>Does anybody know what we are looking for?<br><br>Another hero,<br>Another mindless crime<br>Behind the curtain<br>In the pantomime.<br><br>Hold the line.<br>Does anybody want to take it anymore?<br><br>Show must go on.<br>Show must go on.<br>Inside my heart is breaking.<br>My make-up may be flaking.<br>But my smile still stays on.<br><br>Whatever happens,<br>I'll leave it all to chance.<br>Another heartache,<br>Another failed romance.<br><br>On and on.<br>Does anybody know what we are living for?<br><br>I guess I'm learning.<br>I must be warmer now.<br>I'll soon be turning<br>'Round the corner now.<br><br>Outside the dawn is breaking,<br>But inside in the dark I'm aching to be free.<br><br>Show must go on.<br>Show must go on.<br>Inside my heart is breaking.<br>My make-up may be flaking,<br>But my smile still stays on.<br><br>My soul is painted like the wings of butterflies.<br>Fairytales of yesterday will grow but never die.<br>I can fly, my friends.<br><br>Show must go on.<br>Show must go on.<br>I'll face it with a grin.<br>I'm never giving in—<br>Oh—with the show.<br><br>I'll top the bill,<br>I'll overkill.<br>I have to find the will to carry on with the show.<br>On with the show.<br><br>Show must go on.</div>"
             },
             new SongModel() 

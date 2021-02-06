@@ -24,23 +24,20 @@ export class NavMenu extends Component {
   render () {
     return (
       <header>
-        <Navbar className="navbar-expand-sm sticky-top navbar-toggleable-sm ng-white border-bottom box-shadow mb-3" light>
+        <Navbar className="fixed-top navbar-expand-sm navbar-toggleable-sm border-bottom box-shadow mb-3 bg-dark text-white" light>
           <Container>
-            <NavbarBrand tag={Link} to="/">Rockstar Music Library</NavbarBrand>
+            <NavbarBrand tag={Link} to="/" className="text-white">Rockstar Music Library</NavbarBrand>
             <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
             <Collapse className="d-sm-inline-flex flex-sm-row-reverse" isOpen={!this.state.collapsed} navbar>
               <ul className="navbar-nav flex-grow">
                 <NavItem>
-                  <NavLink tag={Link} className="text-dark" to="/">Home</NavLink>
+                  <NavLink tag={Link} className="text-white" to="/song-1">The Eagles</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink tag={Link} className="text-dark" to="/song-1">Song 1</NavLink>
+                  <NavLink tag={Link} className="text-white" to="/song-2">Queen</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink tag={Link} className="text-dark" to="/song-2">Song 2</NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink tag={Link} className="text-dark" to="/song-3">Song 3</NavLink>
+                  <NavLink tag={Link} className="text-white" to="/song-3">Pink Floyd</NavLink>
                 </NavItem>
               </ul>
             </Collapse>

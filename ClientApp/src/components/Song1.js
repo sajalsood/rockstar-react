@@ -14,16 +14,14 @@ export class Song1 extends Component {
 
   static renderSong(song) {
     return (
-        <div className="d-flex flex-column">
-          <div className="text-center pt-3">
-              <h1>{song.name}</h1>
-              <h3>{song.artist}</h3>
+        <div className="m-10">
+          <div className="card">
+            <img className="card-img-top card-img-pos" src={`${process.env.PUBLIC_URL}/images/${song.imageUrl}`} alt="Card image"  />
           </div>
-          <div className="text-center">
-            <img className="img-fluid rounded-circle" src={`${process.env.PUBLIC_URL}/images/${song.imageUrl}`} style={{ width: "25%", height:"25vw"}} />
-          </div>
-          <div className="text-center pt-3">
-              <div dangerouslySetInnerHTML={{__html: song.lyrics}} />
+          <div className="text-center pt-5">
+            <h1>{song.name}</h1>
+            <h3>{song.artist}</h3>
+            <div dangerouslySetInnerHTML={{__html: song.lyrics}} />
           </div>
         </div>
     );

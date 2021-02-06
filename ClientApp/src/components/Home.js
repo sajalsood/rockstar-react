@@ -14,7 +14,7 @@ export class Home extends Component {
 
   static renderSongs(songs) {
     return (
-      <div className="card-deck text-center">
+      <div className="card-deck text-center pt-5">
         {songs.map(song =>
           <div className="card text-white bg-dark">
             <img className="card-img-top" src={`${process.env.PUBLIC_URL}/images/${song.imageUrl}`} alt="Card image"  />
