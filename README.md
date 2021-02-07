@@ -2,6 +2,12 @@
 
 Web app application for a rockstar music library to show song lyrics for 3 songs.
 
+## Author
+
+- Sajal Sood
+- sood.sa@northeastern.edu
+- 001054338
+
 ## Client (front-end)
 
 - [React](https://reactjs.org/docs/getting-started.html)
