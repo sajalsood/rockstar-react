@@ -14,16 +14,16 @@ export class Song2 extends Component {
 
   static renderSong(song) {
     return (
-      <div className="text-center m-10">
-      <div className="card">
-        <img className="card-img-top card-img-pos" src={`${process.env.PUBLIC_URL}/images/${song.imageUrl}`} alt="Card image"  />
-      </div>
-      <div className="pt-5">
-        <h1>{song.name}</h1>
-        <h3>{song.artist}</h3>
-        <div dangerouslySetInnerHTML={{__html: song.lyrics}} />
-      </div>
-    </div>
+      <div className="m-10">
+          <div className="card m-2">
+            <img className="card-img-top card-img-pos" src={`${process.env.PUBLIC_URL}/images/${song.imageUrl}`} alt="Card image"  />
+          </div>
+          <div className="text-center pt-5">
+            <h1 className="text-info text-center">{song.name}</h1>
+            <p className="text-success m-3" dangerouslySetInnerHTML={{__html: song.lyrics}} />
+            <h5 className="text-primary text-center">- {song.artist}</h5>
+          </div>
+        </div>
     );
   }
 

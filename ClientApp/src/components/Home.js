@@ -16,12 +16,11 @@ export class Home extends Component {
     return (
       <div className="card-deck text-center pt-5">
         {songs.map(song =>
-          <div className="card text-white bg-dark">
+          <div className="card">
             <img className="card-img-top" src={`${process.env.PUBLIC_URL}/images/${song.imageUrl}`} alt="Card image"  />
             <div className="card-body">
-              <h4 className="card-title">{song.name}</h4>
-              <p className="card-text">{song.artist}</p>
-              <a href={`/song-${song.id}`} className="btn btn-primary">See Lyrics</a>
+              <h4 className="card-title text-primary">{song.name}</h4>
+              <a href={`/song-${song.id}`} className="btn btn-success">See Lyrics</a>
             </div>
           </div>
       )}
